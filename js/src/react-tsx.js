@@ -1,119 +1,259 @@
 "use strict";
-const React = require("react");
+var React = require("react");
 exports.el = React.createElement;
 function expand(tag, props, children) {
     children.unshift(tag, props);
     return exports.el.apply(null, children);
 }
-exports.a = (props, ...children) => {
+exports.a = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("a", props, children);
 };
-exports.article = (props, ...children) => {
+exports.article = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("article", props, children);
 };
-exports.section = (props, ...children) => {
+exports.section = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("section", props, children);
 };
-exports.aside = (props, ...children) => {
+exports.aside = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("aside", props, children);
 };
-exports.div = (props, ...children) => {
+exports.div = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("div", props, children);
 };
-exports.p = (props, ...children) => {
+exports.p = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("p", props, children);
 };
-exports.span = (props, ...children) => {
+exports.span = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("span", props, children);
 };
-exports.button = (props, ...children) => {
+exports.button = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("button", props, children);
 };
-exports.form = (props, ...children) => {
+exports.form = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("form", props, children);
 };
-exports.input = (props, ...children) => {
+exports.input = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("input", props, children);
 };
-exports.h1 = (props, ...children) => {
+exports.h1 = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("h1", props, children);
 };
-exports.h2 = (props, ...children) => {
+exports.h2 = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("h2", props, children);
 };
-exports.h3 = (props, ...children) => {
+exports.h3 = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("h3", props, children);
 };
-exports.h4 = (props, ...children) => {
+exports.h4 = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("h4", props, children);
 };
-exports.h5 = (props, ...children) => {
+exports.h5 = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("h5", props, children);
 };
-exports.h6 = (props, ...children) => {
+exports.h6 = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("h6", props, children);
 };
-exports.head = (props, ...children) => {
+exports.head = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("head", props, children);
 };
-exports.header = (props, ...children) => {
+exports.header = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("header", props, children);
 };
-exports.i = (props, ...children) => {
+exports.i = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("i", props, children);
 };
-exports.img = (props) => {
+exports.img = function (props) {
     return expand("img", props, []);
 };
-exports.svg = (props, ...children) => {
+exports.svg = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("svg", props, children);
 };
-exports.ul = (props, ...children) => {
+exports.ul = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("ul", props, children);
 };
-exports.ol = (props, ...children) => {
+exports.ol = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("ol", props, children);
 };
-exports.li = (props, ...children) => {
+exports.li = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("li", props, children);
 };
-exports.nav = (props, ...children) => {
+exports.nav = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("nav", props, children);
 };
-exports.table = (props, ...children) => {
+exports.table = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("table", props, children);
 };
-exports.thead = (props, ...children) => {
+exports.thead = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("thead", props, children);
 };
-exports.tbody = (props, ...children) => {
+exports.tbody = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("tbody", props, children);
 };
-exports.th = (props, ...children) => {
+exports.th = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("th", props, children);
 };
-exports.tr = (props, ...children) => {
+exports.tr = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("tr", props, children);
 };
-exports.td = (props, ...children) => {
+exports.td = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("td", props, children);
 };
-exports.s_break = (props, ...children) => {
+exports.s_break = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     props.className = props.className ? props.className + " clear small-break" : "clear small-break";
     return expand("div", props, children);
 };
-exports.m_break = (props, ...children) => {
+exports.m_break = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     props.className = props.className ? props.className + " clear med-break" : "clear med-break";
     return expand("div", props, children);
 };
-exports.l_break = (props, ...children) => {
+exports.l_break = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     props.className = props.className ? props.className + " clear large-break" : "clear large-break";
     return expand("div", props, children);
 };
-exports.br = (props, ...children) => {
+exports.br = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     return expand("br", props, children);
 };
-exports.row = (props, ...children) => {
+exports.row = function (props) {
+    var children = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        children[_i - 1] = arguments[_i];
+    }
     props.className = props.className ? props.className + " row" : "row";
     return expand("div", props, children);
 };

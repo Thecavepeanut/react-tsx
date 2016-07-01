@@ -7,7 +7,7 @@
     "scripts": {
         "postinstall": "cd ts && typings install",
         "preversion": "npm run compile",
-        "compile": "tsc"
+        "compile": "cd ts && tsc"
     },
     "repository": {
         "type": "git",
