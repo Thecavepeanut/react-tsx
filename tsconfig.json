@@ -12,5 +12,13 @@
         "js",
         "node_modules",
         "typings/globals"
-    ]
+    ],
+    "fileGlobs":[
+      "ts/**",
+      "!js/**",
+      "!node/modules"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    }
 }

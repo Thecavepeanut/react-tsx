@@ -1,38 +1,54 @@
 import React = require("react");
-export declare var el: typeof React.createElement;
-export declare var a: (props: __TSX.aProps, ...children: any[]) => React.ReactElement<__TSX.aProps>;
-export declare var article: __TSX.El;
-export declare var section: __TSX.El;
-export declare var aside: __TSX.El;
-export declare var div: __TSX.El;
-export declare var p: __TSX.El;
-export declare var span: __TSX.El;
-export declare var button: __TSX.El;
-export declare var form: __TSX.El;
-export declare var input: __TSX.El;
-export declare var h1: __TSX.El;
-export declare var h2: __TSX.El;
-export declare var h3: __TSX.El;
-export declare var h4: __TSX.El;
-export declare var h5: __TSX.El;
-export declare var h6: __TSX.El;
-export declare var head: __TSX.El;
-export declare var header: __TSX.El;
-export declare var i: __TSX.El;
-export declare var img: (props: __TSX.imgProps) => React.ReactElement<__TSX.imgProps>;
-export declare var svg: __TSX.El;
-export declare var ul: __TSX.El;
-export declare var ol: __TSX.El;
-export declare var li: __TSX.El;
-export declare var nav: __TSX.El;
-export declare var table: __TSX.El;
-export declare var thead: __TSX.El;
-export declare var tbody: __TSX.El;
-export declare var th: __TSX.El;
-export declare var tr: __TSX.El;
-export declare var td: __TSX.El;
-export declare var s_break: __TSX.El;
-export declare var m_break: __TSX.El;
-export declare var l_break: __TSX.El;
-export declare var br: __TSX.El;
-export declare var row: __TSX.El;
+declare module reactTSX {
+    interface Props extends __React.HTMLAttributes, __React.ClassAttributes<any> {
+    }
+    interface imgProps extends Props {
+        src: string;
+        width?: number | string;
+        height?: number | string;
+    }
+    interface aProps extends Props {
+        href?: string;
+    }
+    type El = (props: Props, ...children: any[]) => __React.ReactElement<any>;
+    var el: typeof React.createElement;
+    var a: (props: aProps, ...children: any[]) => React.ReactElement<aProps>;
+    var article: El;
+    var section: El;
+    var aside: El;
+    var div: El;
+    var p: El;
+    var span: El;
+    var button: El;
+    var form: El;
+    var input: El;
+    var h1: El;
+    var h2: El;
+    var h3: El;
+    var h4: El;
+    var h5: El;
+    var h6: El;
+    var head: El;
+    var header: El;
+    var i: El;
+    var img: (props: imgProps) => React.ReactElement<imgProps>;
+    var svg: El;
+    var ul: El;
+    var ol: El;
+    var li: El;
+    var nav: El;
+    var table: El;
+    var thead: El;
+    var tbody: El;
+    var th: El;
+    var tr: El;
+    var td: El;
+    var s_break: El;
+    var m_break: El;
+    var l_break: El;
+    var br: El;
+    var row: El;
+}
+declare module "react-tsx" {
+    export = reactTSX;
+}
