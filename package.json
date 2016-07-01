@@ -1,27 +1,30 @@
 {
-    "name": "react-tsx",
-    "version": "1.0.0",
-    "description": "A Typescript Wrapper for React.CreateElement(), that makes writing react components more like html. Essentially React+Typescript (NO JSX)",
-    "main": "js/index.js",
-    "typings": "js/index.d.ts",
-    "scripts": {
-        "postinstall": "cd ts && typings install",
-        "preversion": "npm run compile",
-        "compile": "cd ts && tsc"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Thecavepeanut/react-tsx.git"
-    },
-    "keywords": [
-        "React",
-        "NoJSX",
-        "Typescript"
-    ],
-    "author": "Jake Grajewski",
-    "license": "ISC",
-    "devDependencies": {
-        "typescript": "^1.8.10",
-        "typings": "^1.3.1"
-    }
+  "name": "react-tsx",
+  "version": "1.0.2",
+  "description": "A Typescript Wrapper for React.CreateElement(), that makes writing react components more like html. Essentially React+Typescript (NO JSX)",
+  "main": "js/index.js",
+  "typings": "js/index.d.ts",
+  "scripts": {
+    "postinstall": "cd ts && typings install",
+    "preversion": "npm run compile",
+    "compile": "cd ts && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thecavepeanut/react-tsx.git"
+  },
+  "keywords": [
+    "React",
+    "NoJSX",
+    "Typescript"
+  ],
+  "author": "Jake Grajewski",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^1.8.10",
+    "typings": "^1.3.1"
+  },
+  "dependencies": {
+    "react": "^15.1.0"
+  }
 }
