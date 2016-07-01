@@ -2,23 +2,23 @@
     "compilerOptions": {
         "target": "ES6",
         "module": "commonjs",
-        "outDir": "./js/",
+        "outDir": "../js/",
         "sourceMap": true,
         "declaration": true,
         "noImplicitAny": true,
+        "noLib": false,
         "removeComments": true
     },
-    "exclude": [
-        "js",
-        "node_modules",
-        "typings/globals"
-    ],
-    "fileGlobs":[
-      "ts/**",
-      "!js/**",
-      "!node/modules"
+    "filesGlob": [
+        "./**/*.ts"
     ],
     "atom": {
         "rewriteTsconfig": true
-    }
+    },
+    "files": [
+        "./index.ts",
+        "./src/react-tsx.ts",
+        "./typings/globals/react/index.d.ts",
+        "./typings/index.d.ts"
+    ]
 }

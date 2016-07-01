@@ -1,54 +1,49 @@
 import React = require("react");
-declare module reactTSX {
-    interface Props extends __React.HTMLAttributes, __React.ClassAttributes<any> {
-    }
-    interface imgProps extends Props {
-        src: string;
-        width?: number | string;
-        height?: number | string;
-    }
-    interface aProps extends Props {
-        href?: string;
-    }
-    type El = (props: Props, ...children: any[]) => __React.ReactElement<any>;
-    var el: typeof React.createElement;
-    var a: (props: aProps, ...children: any[]) => React.ReactElement<aProps>;
-    var article: El;
-    var section: El;
-    var aside: El;
-    var div: El;
-    var p: El;
-    var span: El;
-    var button: El;
-    var form: El;
-    var input: El;
-    var h1: El;
-    var h2: El;
-    var h3: El;
-    var h4: El;
-    var h5: El;
-    var h6: El;
-    var head: El;
-    var header: El;
-    var i: El;
-    var img: (props: imgProps) => React.ReactElement<imgProps>;
-    var svg: El;
-    var ul: El;
-    var ol: El;
-    var li: El;
-    var nav: El;
-    var table: El;
-    var thead: El;
-    var tbody: El;
-    var th: El;
-    var tr: El;
-    var td: El;
-    var s_break: El;
-    var m_break: El;
-    var l_break: El;
-    var br: El;
-    var row: El;
+export interface Props extends React.HTMLAttributes, React.ClassAttributes<any> {
 }
-declare module "react-tsx" {
-    export = reactTSX;
+export interface imgProps extends Props {
+    src: string;
+    width?: number | string;
+    height?: number | string;
 }
+export interface aProps extends Props {
+    href?: string;
+}
+export declare type El = (props: Props, ...children: any[]) => React.ReactElement<any>;
+export declare var el: typeof React.createElement;
+export declare var a: (props: aProps, ...children: any[]) => React.ReactElement<aProps>;
+export declare var article: El;
+export declare var section: El;
+export declare var aside: El;
+export declare var div: El;
+export declare var p: El;
+export declare var span: El;
+export declare var button: El;
+export declare var form: El;
+export declare var input: El;
+export declare var h1: El;
+export declare var h2: El;
+export declare var h3: El;
+export declare var h4: El;
+export declare var h5: El;
+export declare var h6: El;
+export declare var head: El;
+export declare var header: El;
+export declare var i: El;
+export declare var img: (props: imgProps) => React.ReactElement<imgProps>;
+export declare var svg: El;
+export declare var ul: El;
+export declare var ol: El;
+export declare var li: El;
+export declare var nav: El;
+export declare var table: El;
+export declare var thead: El;
+export declare var tbody: El;
+export declare var th: El;
+export declare var tr: El;
+export declare var td: El;
+export declare var s_break: El;
+export declare var m_break: El;
+export declare var l_break: El;
+export declare var br: El;
+export declare var row: El;

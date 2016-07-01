@@ -5,7 +5,7 @@
     "main": "js/index.js",
     "typings": "js/index.d.ts",
     "scripts": {
-        "postinstall": "typings install",
+        "postinstall": "cd ts && typings install",
         "preversion": "npm run compile",
         "compile": "tsc"
     },
