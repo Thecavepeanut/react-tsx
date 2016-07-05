@@ -1,5 +1,5 @@
 # React-TSX
-React-TSX is a typescript library that makes writing compiled react code using Typescript.
+React-TSX is a typescript library that makes writing compiled react code using Typescript simple and look very close to html, if it were functional programming.
 
 ## Reason for react-tsx
 The reason react-tsx was created is that Typescript does not always play well with jsx,
