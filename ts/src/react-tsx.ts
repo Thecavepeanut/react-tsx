@@ -4,7 +4,7 @@ import React = require("react");
  * This is the base properties all react components can have
  */
 export interface Props extends React.HTMLAttributes, React.ClassAttributes<any> {
-} 
+}
 
 /**
  * Extra propeties that are specific to the certain html tags
@@ -28,7 +28,7 @@ function expand(tag: string, props: any, children: any[]): React.ReactElement<an
   return el.apply(null, children);
 }
 
-export type Component<P extends Props, S> = React.Component<P,S>;
+export class Component<P extends Props, S> extends React.Component<P,S>{};
 
 /**********************************************************
  *                     BASIC ELEMENTS                     *

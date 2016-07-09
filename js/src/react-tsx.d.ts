@@ -8,7 +8,8 @@ export interface imgProps extends Props {
 }
 export declare type El = (props: Props, ...children: any[]) => React.ReactElement<any>;
 export declare var el: typeof React.createElement;
-export declare type Component<P extends Props, S> = React.Component<P, S>;
+export declare class Component<P extends Props, S> extends React.Component<P, S> {
+}
 export declare var a: El;
 export declare var article: El;
 export declare var section: El;

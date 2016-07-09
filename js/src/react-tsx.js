@@ -1,10 +1,24 @@
 "use strict";
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
 var React = require("react");
 exports.el = React.createElement;
 function expand(tag, props, children) {
     children.unshift(tag, props);
     return exports.el.apply(null, children);
 }
+var Component = (function (_super) {
+    __extends(Component, _super);
+    function Component() {
+        _super.apply(this, arguments);
+    }
+    return Component;
+}(React.Component));
+exports.Component = Component;
+;
 exports.a = function (props) {
     var children = [];
     for (var _i = 1; _i < arguments.length; _i++) {
