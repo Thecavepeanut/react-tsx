@@ -5,11 +5,13 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var React = require("react");
-exports.el = React.createElement;
+var react_dom_1 = require("react-dom");
+var react_router_1 = require("react-router");
 function expand(tag, props, children) {
     children.unshift(tag, props);
     return exports.el.apply(null, children);
 }
+exports.el = React.createElement;
 var Component = (function (_super) {
     __extends(Component, _super);
     function Component() {
@@ -19,6 +21,8 @@ var Component = (function (_super) {
 }(React.Component));
 exports.Component = Component;
 ;
+exports.RenderToDom = react_dom_1.render;
+exports.ReactRouter = { Router: react_router_1.Router, Route: react_router_1.Route, Link: react_router_1.Link };
 exports.a = function (props) {
     var children = [];
     for (var _i = 1; _i < arguments.length; _i++) {

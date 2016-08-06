@@ -1,5 +1,6 @@
 import React = require("react");
-
+import {render} from "react-dom";
+import {Router, Route, Link} from "react-router";
 /*
  * This is the base properties all react components can have
  */
@@ -16,26 +17,30 @@ export interface imgProps extends Props {
 }
 
 export type El = (props: Props, ...children: any[]) => React.ReactElement<any>
-//TODO Fill out other tags like that have specific properties
-
 /**
  * Our base element creator, this one should be used externally to render any React.ComponentClass<P>;
- * @type {(function(string, P=, ...[ReactNode]): DOMElement<P>)|(function(ClassicComponentClass<P>, P=, ...[ReactNode]): ClassicElement<P>)|(function((ComponentClass<P>|StatelessComponent<P>), P=, ...[ReactNode]): ReactElement<P>)}
+ * @type {(function(string, P=, ...[ReactNode]): DOMElement<P>)|
+ (function(ClassicComponentClass<P>, P=, ...[ReactNode]): ClassicElement<P>)|
+ (function((ComponentClass<P>|StatelessComponent<P>), P=, ...[ReactNode]): ReactElement<P>)}
  */
-export var el = React.createElement;
 function expand(tag: string, props: any, children: any[]): React.ReactElement<any> {
   children.unshift(tag, props);
   return el.apply(null, children);
 }
-
-export class Component<P extends Props, S> extends React.Component<P,S>{};
+/**********************************************************
+ *        Exporting commonly used React Methods           *
+ **********************************************************/
+export var el = React.createElement; // use this to createElement, mainly for custom Components
+export class Component<P extends Props, S> extends React.Component<P, S>{ };
+export var RenderToDom = render;
+export var ReactRouter = { Router, Route, Link };
 
 /**********************************************************
  *                     BASIC ELEMENTS                     *
  **********************************************************/
 export var a: El = (props, ...children) => {
-    return expand("a", props, children);
-  };
+  return expand("a", props, children);
+};
 export var article: El = (props, ...children) => {
   return expand("article", props, children);
 };

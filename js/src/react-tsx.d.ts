@@ -1,4 +1,6 @@
 import React = require("react");
+import { render } from "react-dom";
+import { Router, Route, Link } from "react-router";
 export interface Props extends React.HTMLAttributes, React.ClassAttributes<any> {
 }
 export interface imgProps extends Props {
@@ -10,6 +12,12 @@ export declare type El = (props: Props, ...children: any[]) => React.ReactElemen
 export declare var el: typeof React.createElement;
 export declare class Component<P extends Props, S> extends React.Component<P, S> {
 }
+export declare var RenderToDom: typeof render;
+export declare var ReactRouter: {
+    Router: typeof Router;
+    Route: typeof Route;
+    Link: typeof Link;
+};
 export declare var a: El;
 export declare var article: El;
 export declare var section: El;

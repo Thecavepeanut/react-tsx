@@ -19,6 +19,8 @@
         "./index.ts",
         "./src/react-tsx.ts",
         "./typings/globals/react/index.d.ts",
-        "./typings/index.d.ts"
+        "./typings/index.d.ts",
+        "./typings/modules/react-dom/index.d.ts",
+        "./typings/modules/react-router/index.d.ts"
     ]
 }
