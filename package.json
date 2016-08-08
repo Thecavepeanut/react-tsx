@@ -1,6 +1,6 @@
 {
   "name": "react-tsx",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A Typescript Wrapper for React.CreateElement(), that makes writing react components more like html. Essentially React+Typescript (NO JSX)",
   "main": "js/index.js",
   "typings": "js/index.d.ts",
@@ -27,6 +27,7 @@
   "dependencies": {
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
-    "react-router": "^2.6.1"
+    "react-router": "^2.6.1",
+    "react-tap-event-plugin": "^1.0.0"
   }
 }
