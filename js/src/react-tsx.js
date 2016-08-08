@@ -7,6 +7,8 @@ var __extends = (this && this.__extends) || function (d, b) {
 var React = require("react");
 var react_dom_1 = require("react-dom");
 var react_router_1 = require("react-router");
+var injectTapEventPlugin = require("react-tap-event-plugin");
+injectTapEventPlugin();
 function expand(tag, props, children) {
     children.unshift(tag, props);
     return exports.el.apply(null, children);

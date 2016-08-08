@@ -1,6 +1,10 @@
 import React = require("react");
 import {render} from "react-dom";
 import {Router, Route, Link} from "react-router";
+
+declare var require:any;
+import injectTapEventPlugin = require("react-tap-event-plugin");
+injectTapEventPlugin();
 /*
  * This is the base properties all react components can have
  */

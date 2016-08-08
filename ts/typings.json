@@ -1,7 +1,11 @@
 {
   "name": "react-tsx",
-  "dependencies": {},
+  "dependencies": {
+    "react-dom": "registry:npm/react-dom#15.0.1+20160705210405",
+    "react-router": "registry:npm/react-router#2.4.0+20160803174347"
+  },
   "globalDependencies": {
-    "react": "registry:dt/react#0.14.0+20160630100702"
+    "react": "registry:dt/react#0.14.0+20160630100702",
+    "react-tap-event-plugin": "registry:dt/react-tap-event-plugin#0.0.0+20160602142434"
   }
 }
