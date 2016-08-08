@@ -1,6 +1,6 @@
 {
   "name": "react-tsx",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A Typescript Wrapper for React.CreateElement(), that makes writing react components more like html. Essentially React+Typescript (NO JSX)",
   "main": "js/index.js",
   "typings": "js/index.d.ts",
