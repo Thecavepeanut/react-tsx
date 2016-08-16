@@ -1,0 +1,77 @@
+
+  export var circle: El = (props, ...children) => {
+    return expand("circle", props, children);
+  };
+  
+  export var clipPath: El = (props, ...children) => {
+    return expand("clipPath", props, children);
+  };
+  
+  export var defs: El = (props, ...children) => {
+    return expand("defs", props, children);
+  };
+  
+  export var ellipse: El = (props, ...children) => {
+    return expand("ellipse", props, children);
+  };
+  
+  export var g: El = (props, ...children) => {
+    return expand("g", props, children);
+  };
+  
+  export var image: El = (props, ...children) => {
+    return expand("image", props, children);
+  };
+  
+  export var line: El = (props, ...children) => {
+    return expand("line", props, children);
+  };
+  
+  export var linearGradient: El = (props, ...children) => {
+    return expand("linearGradient", props, children);
+  };
+  
+  export var mask: El = (props, ...children) => {
+    return expand("mask", props, children);
+  };
+  
+  export var path: El = (props, ...children) => {
+    return expand("path", props, children);
+  };
+  
+  export var pattern: El = (props, ...children) => {
+    return expand("pattern", props, children);
+  };
+  
+  export var polygon: El = (props, ...children) => {
+    return expand("polygon", props, children);
+  };
+  
+  export var polyline: El = (props, ...children) => {
+    return expand("polyline", props, children);
+  };
+  
+  export var radialGradient: El = (props, ...children) => {
+    return expand("radialGradient", props, children);
+  };
+  
+  export var rect: El = (props, ...children) => {
+    return expand("rect", props, children);
+  };
+  
+  export var stop: El = (props, ...children) => {
+    return expand("stop", props, children);
+  };
+  
+  export var svg: El = (props, ...children) => {
+    return expand("svg", props, children);
+  };
+  
+  export var text: El = (props, ...children) => {
+    return expand("text", props, children);
+  };
+  
+  export var tspan: El = (props, ...children) => {
+    return expand("tspan", props, children);
+  };
+  

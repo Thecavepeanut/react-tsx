@@ -18,9 +18,10 @@
     "files": [
         "./index.ts",
         "./src/react-tsx.ts",
-        "./typings/browser.d.ts",
+        "./typings/globals/react-tap-event-plugin/index.d.ts",
         "./typings/globals/react/index.d.ts",
         "./typings/index.d.ts",
-        "./typings/main.d.ts"
+        "./typings/modules/react-dom/index.d.ts",
+        "./typings/modules/react-router/index.d.ts"
     ]
 }
